@@ -1,13 +1,29 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Meine To-Do-Liste</title>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div class="container">
+      <h1>Meine To-Do-Liste</h1>
+      <div class="todo-container">
+        <form class="todo-form">
+          <input
+            type="text"
+            class="todo-input"
+            placeholder="Neue Aufgabe hinzufügen"
+          />
+          <button type="submit" class="add-button">Hinzufügen</button>
+        </form>
+        <ul class="todo-list"></ul>
+        <p class="task-counter">
+          Offene Aufgaben: <span id="task-count">0</span>
+        </p>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
